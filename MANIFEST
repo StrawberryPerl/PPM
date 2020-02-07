@@ -18,12 +18,12 @@ lib/PPM/XML/RepositorySummary.pm
 lib/PPM/XML/ValidatingElement.pm
 Makefile.PL
 MANIFEST
+META.json			Module JSON meta-data (added by MakeMaker)
 META.yml
 README
 README.orig
 server/ppmserver.pl
 server/PPMServer.pm
-t_conf/.exists
 t/basic.t
 t/lib/TestPPM.pm
 t/pod.t
@@ -43,7 +43,7 @@ t/ppms/searchsummary.ppm
 t/ppms/Win32-TieRegistry.ppd
 t/ppms/Win32API-Registry.ppd
 t/repository.t
+t_conf/.exists
 utils/mergePPDs.pl
 utils/searchsummary.pl
 utils/summary.pl
-META.json                                Module JSON meta-data (added by MakeMaker)

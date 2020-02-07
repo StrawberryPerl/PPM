@@ -7,7 +7,7 @@ use strict;
 
 use PPM;
 
-$PPM::VERSION = '11.11_03';
+$PPM::VERSION = '11.11_04';
 
 my %help;
 

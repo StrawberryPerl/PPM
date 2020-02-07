@@ -2,7 +2,7 @@ package PPM;
 require 5.004;
 require Exporter;
 use vars qw( $VERSION );
-$VERSION = '11.11_03';
+$VERSION = '11.11_04';
 
 @ISA = qw(Exporter);
 @EXPORT = qw(PPMdat PPMERR InstalledPackageProperties ListOfRepositories
@@ -264,7 +264,7 @@ sub InstallPackage
         return 0;
     }
     if ($Config{'osname'} eq 'MSWin32' &&
-        !&Win32::IsWinNT && exists $Win9x_denied{lc($package)}) {
+        !&Win32::IsWinNT() && exists $Win9x_denied{lc($package)}) {
         $PPM::PPMERR = "Package '$package' cannot be installed with PPM on Win9x--see http://www.ActiveState.com/ppm for details";
         return 0;
     }
@@ -683,7 +683,7 @@ sub VerifyPackage
         &Trace("Upgrade to $package is available") if $options{'TRACE'} > 1;
         if ($upgrade) {
             if ($Config{'osname'} eq 'MSWin32' &&
-                !&Win32::IsWinNT && exists $Win9x_denied{lc($package)}) {
+                !&Win32::IsWinNT() && exists $Win9x_denied{lc($package)}) {
                 $PPM::PPMERR = "Package '$package' cannot be upgraded with PPM on Win9x--see http://www.ActiveState.com/ppm for details";
                 return undef;
             }

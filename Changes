@@ -1,15 +1,2 @@
-Version 0.01_01 (March 26, 2008)
-  - initial developmental version, starting from PPM-2.1.8
-  - apply patch from sisyphus:
-      http://rt.cpan.org/Public/Bug/Display.html?id=28794
-    to handle zip files from repositories
-  - apply patch:
-      http://rt.cpan.org/Public/Bug/Display.html?id=34084
-    to append correct "-5.10" to architecture string for perl-5.10
-  - various fixes so that the parsing of ppd files doesn't choke
-    on REQUIRE or PROVIDE elements
-  - populate ppm.xml with available repository information
-    appropriate for the perl version
-  - remove requirement of SOAP::Lite for perl-5.10, as repositories
-    for this version are summary-file based, not soap-based
-  - refuse to install if a ppm.bat is found under 
+11.11_04        2020-02-07
+                - fix: https://github.com/StrawberryPerl/Perl-Dist-Strawberry/issues/12
