@@ -1,0 +1,18 @@
+This is an (unauthorized) development release of PPM, based on PPM-2.1.8
+of Murray Nesbitt, with some changes made to make it work with perl-5.10.
+For details of these changes, please see the Changes file. The original
+Changes and README files of PPM-2.1.8 are included in this distribution
+as, respectively, Changes.orig and README.orig.
+
+Installation of this package will result in a set of default
+repositories being included in the ppm.xml configuration file,
+including the appropriate ActiveState repository. If you find 
+searches are too slow with these repositories, try deleting
+some.
+
+In the future these changes will hopefully be integrated into a new
+official PPM version.
+
+Please contact Randy Kobes <r.kobes@uwinnipeg.ca> for problems related
+to these changes and/or suggestions for enhancements.
+
